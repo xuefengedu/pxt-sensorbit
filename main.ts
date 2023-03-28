@@ -245,7 +245,7 @@ namespace sensors {
         }
     }
 
-    //% blockId=slideRheostat block="slideRheostat |analog pin %pin"   group="滑动变阻器模块"
+    //% blockId=slideRheostat block="slideRheostat |analog pin %pin"   group="Slide rheostat module"
     //% weight=70
     //% subcategory="BasicInputModule"
     export function slideRheostat(pin: AnalogPin): number {
@@ -253,7 +253,7 @@ namespace sensors {
         return row
     }
 
-    //% blockId=rotaryPotentiometer block="rotaryPotentiometer |analog pin %pin" group="旋转电位器模块"
+    //% blockId=rotaryPotentiometer block="rotaryPotentiometer |analog pin %pin" group="Rotary Potentiometer Module"
     //% weight=70
     //% subcategory="BasicInputModule"
     export function rotaryPotentiometer(pin: AnalogPin): number {
@@ -268,7 +268,7 @@ namespace sensors {
      * @param SDO SDO  eg: DigitalPin.P13 
      * @param SCL SCL  eg: DigitalPin.P14
      */
-    //% blockId=actuator_keyborad_pin block="actuator_keyborad_pin|SDOPIN %SDO|SCLPIN %SCL"   group="矩阵键盘模块"
+    //% blockId=actuator_keyborad_pin block="actuator_keyborad_pin|SDOPIN %SDO|SCLPIN %SCL"   group="Matrix keyboard module"
     //% weight=71
     //% subcategory="BasicInputModule"
     export function actuator_keyborad_pin(SDO: DigitalPin, SCL: DigitalPin): void {
@@ -277,7 +277,7 @@ namespace sensors {
         _SCL = SCL
     }
 
-    //% blockId=actuator_keyborad_read block="actuator_keyborad_read"   group="矩阵键盘模块"
+    //% blockId=actuator_keyborad_read block="actuator_keyborad_read"   group="Matrix keyboard module"
     //% weight=70
     //% subcategory="BasicInputModule"
     export function actuator_keyborad_read(): string {
@@ -326,7 +326,7 @@ namespace sensors {
      * @param piny eg: AnalogPin.P1
      * @param pinb eg: DigitalPin.P8
      */
-    //% blockId=rockerPin block="rockerPin setup | pinX %pinx|pinY %piny|pinB %pinb" group="摇杆模块"
+    //% blockId=rockerPin block="rockerPin setup | pinX %pinx|pinY %piny|pinB %pinb" group="Joystick module"
     //% weight=70
     //% subcategory="BasicInputModule"
     export function rockerPin(pinx: AnalogPin, piny: AnalogPin, pinb: DigitalPin): void {
@@ -335,7 +335,7 @@ namespace sensors {
         Bpin = pinb
     }
 
-    //% blockId=_analogRead block="select analog pin  %selectpin" group="摇杆模块"
+    //% blockId=_analogRead block="select analog pin  %selectpin" group="Joystick module"
     //% weight=69
     //% subcategory="BasicInputModule"
     export function _analogRead(selectpin: _rockerpin): number {
@@ -347,7 +347,7 @@ namespace sensors {
         return pins.analogReadPin(a)
     }
 
-    //% blockId=_digitalRead block="Is the rocker module pressed?" group="摇杆模块"
+    //% blockId=_digitalRead block="Is the rocker module pressed?" group="Joystick module"
     //% weight=68
     //% subcategory="BasicInputModule"
     export function _digitalRead(): boolean {
@@ -366,7 +366,7 @@ namespace sensors {
      * @param DIO eg: DigitalPin.P13
      * @param CLK eg: DigitalPin.P14
      */
-    //% blockId=basic_piano_pin block="basic_piano_pin |DIO pin %DIO|CLK pin %CLK"   group="触摸钢琴模块 V1"
+    //% blockId=basic_piano_pin block="basic_piano_pin |DIO pin %DIO|CLK pin %CLK"   group="Touch piano module V1"
     //% weight=70
     //% subcategory="BasicInputModule"
     export function basic_piano_pin(DIO: DigitalPin, CLK: DigitalPin): void {
@@ -375,7 +375,7 @@ namespace sensors {
         _CLK = CLK
     }
 
-    //% blockId=basic_piano_play block="basic_piano_play"   group="触摸钢琴模块 V1"
+    //% blockId=basic_piano_play block="basic_piano_play"   group="Touch piano module V1"
     //% weight=69
     //% subcategory="BasicInputModule"
     export function basic_piano_play(): void {
@@ -417,7 +417,7 @@ namespace sensors {
      * @param pianoDIO eg: DigitalPin.P13
      * @param pianoCLK eg: DigitalPin.P14
      */
-    //% blockId=piano_v2_init block="piano_v2_init|DIO %pianoDIO|CLK %pianoCLK"   group="触摸钢琴模块 V2"
+    //% blockId=piano_v2_init block="piano_v2_init|DIO %pianoDIO|CLK %pianoCLK"   group="Touch piano module V2"
     //% weight=61
     //% subcategory="BasicInputModule"
     export function piano_v2_init(pianoDIO: DigitalPin, pianoCLK: DigitalPin): void {
@@ -426,7 +426,7 @@ namespace sensors {
         _pianoCLK = pianoCLK
     }
 
-    //% blockId=piano_v2_play block="piano_v2_read"   group="触摸钢琴模块 V2"
+    //% blockId=piano_v2_play block="piano_v2_read"   group="Touch piano module V2"
     //% weight=60
     //% subcategory="BasicInputModule"
     export function piano_v2_play(): void {
@@ -460,7 +460,7 @@ namespace sensors {
     /**
      * 游戏手柄
      */
-    //% blockId=Gamepad_Press block="Gamepad buttons %button Is pressed？"  group="PH2.0手柄"
+    //% blockId=Gamepad_Press block="Gamepad buttons %button Is pressed？"  group="PH2.0Handle"
     //% weight=74
     //% subcategory="BasicInputModule"
     //% inlineInputMode=inline
@@ -473,9 +473,9 @@ namespace sensors {
     }
 
     /**
-     * PH2.0手柄
+     * PH2.0Handle
      */
-    //% blockId=Gamepad_Release block="Gamepad buttons %button Is Released？"  group="PH2.0手柄"
+    //% blockId=Gamepad_Release block="Gamepad buttons %button Is Released？"  group="PH2.0Handle"
     //% weight=74
     //% subcategory="BasicInputModule"
     //% inlineInputMode=inline
@@ -488,9 +488,9 @@ namespace sensors {
     }
 
     /**
-     * PH2.0手柄
+     * PH2.0Handle
      */
-    //% blockId=Gamepad_Shaft block="Game controller acquisition %shaft the value of"  group="PH2.0手柄"
+    //% blockId=Gamepad_Shaft block="Game controller acquisition %shaft the value of"  group="PH2.0Handle"
     //% weight=74
     //% subcategory="BasicInputModule"
     //% inlineInputMode=inline
@@ -506,9 +506,9 @@ namespace sensors {
     }
 
     /**
-     * PH2.0手柄
+     * PH2.0Handle
      */
-    //% blockId=Gamepad_Status block="Button %button is it %status status?"  group="PH2.0手柄"
+    //% blockId=Gamepad_Status block="Button %button is it %status status?"  group="PH2.0Handle"
     //% weight=74
     //% subcategory="BasicInputModule"
     //% inlineInputMode=inline
@@ -555,7 +555,7 @@ namespace sensors {
         pins.i2cWriteBuffer(addr, buf)
     }
     
-    //% blockId=sensor_water block="Water vapor sensor pin %pines"  group="水蒸气传感器"
+    //% blockId=sensor_water block="Water vapor sensor pin %pines"  group="Water vapor sensor"
     //% weight=70
     //% inlineInputMode=inline
     //% subcategory="Sensor"
@@ -565,7 +565,7 @@ namespace sensors {
    }
 
 
-   //% blockId=sensor_temperature block="Pin %pin reads the analog value of the LM35"  group="LM35温度传感器"
+   //% blockId=sensor_temperature block="Pin %pin reads the analog value of the LM35"  group="LM35 temperature sensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -576,7 +576,7 @@ namespace sensors {
    }
 
 
-   //% blockId=sensor_infraredTracking block="Pin %pin reads the digital value of the infraredTracking sensor" group="红外循迹传感器"
+   //% blockId=sensor_infraredTracking block="Pin %pin reads the digital value of the infraredTracking sensor" group="InfraredTrackingSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -589,7 +589,7 @@ namespace sensors {
        }
    }
 
-   //% blockId=sensor_incline block="sensor_incline pin |digitalpin %pin" group="倾斜传感器"
+   //% blockId=sensor_incline block="sensor_incline pin |digitalpin %pin" group="TiltSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -605,10 +605,10 @@ namespace sensors {
    }
 
    /**
-    * 光敏传感器
+    * PhotosensitiveSensor
     */
 
-   //% blockId=sensor_illumination block="sensor_illumination pin |analogpin %pin" group="光敏传感器"
+   //% blockId=sensor_illumination block="sensor_illumination pin |analogpin %pin" group="PhotosensitiveSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -617,10 +617,10 @@ namespace sensors {
    }
 
    /**
-    * 热敏传感器
+    * ThermalSensor
     */
 
-   //% blockId=sensor_thermosensitive block="sensor_thermosensitive pin |analogpin %pin" group="热敏传感器"
+   //% blockId=sensor_thermosensitive block="sensor_thermosensitive pin |analogpin %pin" group="ThermalSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -629,10 +629,10 @@ namespace sensors {
    }
 
    /**
-    * 水深传感器
+    * WaterDepthSensor
     */
 
-   //% blockId=sensor_waterLevel block="sensor_waterLevel pin |analogpin %pin" group="水深传感器"
+   //% blockId=sensor_waterLevel block="sensor_waterLevel pin |analogpin %pin" group="WaterDepthSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -641,10 +641,10 @@ namespace sensors {
    }
 
    /**
-    * 土壤湿度传感器
+    * SoilMoistureSensor
     */
 
-   //% blockId=sensor_soilMoisture block="sensor_soilMoisture pin |analogpin %pin"  group="土壤湿度传感器"
+   //% blockId=sensor_soilMoisture block="sensor_soilMoisture pin |analogpin %pin"  group="SoilMoistureSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -653,10 +653,10 @@ namespace sensors {
    }
 
    /**
-    * 灰度传感器
+    * GrayscaleSensor
     */
 
-   //% blockId=sensor_grayLevel block="sensor_grayLevel pin |analogpin %pin" group="灰度传感器"
+   //% blockId=sensor_grayLevel block="sensor_grayLevel pin |analogpin %pin" group="GrayscaleSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -665,10 +665,10 @@ namespace sensors {
 }
 
    /**
-    * 避障传感器
+    * ObstacleAvoidanceSensor
     */
 
-   //% blockId=sensor_obstacleAvoid block="sensor_obstacleAvoid pin |digitalpin %pin" group="避障传感器"
+   //% blockId=sensor_obstacleAvoid block="sensor_obstacleAvoid pin |digitalpin %pin" group="ObstacleAvoidanceSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -683,10 +683,10 @@ namespace sensors {
    }
 
    /**
-    * 磁簧开关传感器
+    * ReedSwitchSensors
     */
 
-   //% blockId=sensor_reedSwitch block="sensor_reedSwitch pin |digitalpin %pin" group="磁簧开关传感器"
+   //% blockId=sensor_reedSwitch block="sensor_reedSwitch pin |digitalpin %pin" group="ReedSwitchSensors"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -700,10 +700,10 @@ namespace sensors {
    }
 
    /**
-    * 人体热释电传感器
+    * HumanBodyPyroelectricSensor
     */
 
-   //% blockId=sensor_humanBody block="sensor_humanBody pin |digitalpin %pin" group="人体热释电传感器"
+   //% blockId=sensor_humanBody block="sensor_humanBody pin |digitalpin %pin" group="HumanBodyPyroelectricSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -716,7 +716,7 @@ namespace sensors {
        }
    }
 
-      //% blockId=sensor_flame block="Pin %pin reads the digital value of the flame sensor" group="火焰传感器"
+      //% blockId=sensor_flame block="Pin %pin reads the digital value of the flame sensor" group="FlameSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -729,7 +729,7 @@ namespace sensors {
      }
  }
 
- //% blockId=sensor_flame_analog block="Pin %pin reads the analog value of the flame sensor" group="火焰传感器"
+ //% blockId=sensor_flame_analog block="Pin %pin reads the analog value of the flame sensor" group="FlameSensor"
  //% weight=70
  //% inlineInputMode=inline
  //% subcategory="Sensor"
@@ -745,7 +745,7 @@ namespace sensors {
   * @param maxCmDistance 
   * @returns 
   */
-   //% blockId="sensor_ping" block="ping trig %trig|echo %echo|unit %unit" group="普通超声波传感器"
+   //% blockId="sensor_ping" block="ping trig %trig|echo %echo|unit %unit" group="OrdinaryUltrasonicSensor"
    //% weight=75
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -769,10 +769,10 @@ namespace sensors {
 }
 
    /**
-    * 震动传感器
+    * ShockSensor
     */
 
-   //% blockId=sensor_quake block="sensor_quake pin |digitalpin %pin" group="震动传感器"
+   //% blockId=sensor_quake block="sensor_quake pin |digitalpin %pin" group="ShockSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -786,10 +786,10 @@ namespace sensors {
    }
 
    /**
-    * 震动传感器
+    * ShockSensor
     */
 
-   //% blockId=sensor_quake_analog block="sensor_quake pin |digitalpin %pin" group="震动传感器"
+   //% blockId=sensor_quake_analog block="sensor_quake pin |digitalpin %pin" group="ShockSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -799,9 +799,9 @@ namespace sensors {
 
 
    /**
-    * 声音传感器
+    * SoundSensor
     */
-   //% blockId=sensor_sound_analogread  block="Pin %pin reads the analog value of the sound sensor" group="声音传感器"
+   //% blockId=sensor_sound_analogread  block="Pin %pin reads the analog value of the sound sensor" group="SoundSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -810,7 +810,7 @@ namespace sensors {
 
    }
 
-   //% blockId=sensor_sound_digitalread  block="Pin %pin reads the digital value of the sound sensor" group="声音传感器"
+   //% blockId=sensor_sound_digitalread  block="Pin %pin reads the digital value of the sound sensor" group="SoundSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -824,9 +824,9 @@ namespace sensors {
    }
 
    /**
-    * 雨滴传感器
+    * RainSensor
     */
-   //% blockId=sensor_rain_analogread  block="Pin %pin reads the analog value of the rain sensor"  group="雨滴传感器"
+   //% blockId=sensor_rain_analogread  block="Pin %pin reads the analog value of the rain sensor"  group="RainSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -834,7 +834,7 @@ namespace sensors {
        return pins.analogReadPin(_DR)
    }
 
-   //% blockId=sensor_rain_digitalread  block="Pin %pin reads the digital value of the rain sensor"   group="雨滴传感器"
+   //% blockId=sensor_rain_digitalread  block="Pin %pin reads the digital value of the rain sensor"   group="RainSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -848,9 +848,9 @@ namespace sensors {
    }
 
    /**
-    * 气体传感器
+    * GasSensor
     */
-   //% blockId=sensor_gas_analogread  block="Pin %pin reads the analog value of the MQ4-gas sensor"  group="MQ4气体传感器"
+   //% blockId=sensor_gas_analogread  block="Pin %pin reads the analog value of the MQ4-gas sensor"  group="MQ4GasSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -858,7 +858,7 @@ namespace sensors {
        return pins.analogReadPin(_AG)
    }
 
-   //% blockId=sensor_gas_digitalread  block="Pin %pin reads the digital value of the MQ4-gas sensor"  group="MQ4气体传感器"
+   //% blockId=sensor_gas_digitalread  block="Pin %pin reads the digital value of the MQ4-gas sensor"  group="MQ4GasSensor"
    //% weight=70
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -882,7 +882,7 @@ namespace sensors {
     * Get RUS04 distance
     * @param pin Microbit ultrasonic pin; eg: DigitalPin.P2
    */
-   //% blockId=Ultrasonic block="Read RgbUltrasonic Distance at pin %pin(cm)"  group="RGB超声波传感器"
+   //% blockId=Ultrasonic block="Read RgbUltrasonic Distance at pin %pin(cm)"  group="RGBUltrasonicSensor"
    //% weight=76
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -1105,7 +1105,7 @@ namespace sensors {
     * @param rgb color
     * @param effect effect
     */
-   //% blockId="sensorbit_rus04" block="part %index show color %rgb effect %effect rgbpin %pin"  group="RGB超声波传感器"
+   //% blockId="sensorbit_rus04" block="part %index show color %rgb effect %effect rgbpin %pin"  group="RGBUltrasonicSensor"
    //% weight=75
    //% inlineInputMode=inline
    //% subcategory="Sensor"
@@ -1121,7 +1121,7 @@ namespace sensors {
     * @param dht11type 
     * @returns 
     */
-   //% blockId="dht11value" block="value of dht11 %dht11type at pin %dht11pin"  group="DHT11温湿度传感器"
+   //% blockId="dht11value" block="value of dht11 %dht11type at pin %dht11pin"  group="DHT11TemperatureAndHumiditySensor"
    //% subcategory="Sensor"
    //% inlineInputMode=inline
    //% weight=72
@@ -1226,9 +1226,9 @@ namespace sensors {
 
 
 /**
-    * 四路循迹传感器
+    * FourWayTrackSensor
     */
-   //% blockId=sensor_tracking block="sensor_tracking pin |digitalpin %pin"  group="四路循迹传感器"
+   //% blockId=sensor_tracking block="sensor_tracking pin |digitalpin %pin"  group="FourWayTrackSensor"
    //% weight=74
    //% subcategory="Sensor"
    //% inlineInputMode=inline
@@ -1246,7 +1246,7 @@ namespace sensors {
      let outPin3 = 0;
      let outPin4 = 0;
      /**
-      * 四路循迹传感器初始化
+      * FourWayTrackSensor Init
       */
      /**
       * 
@@ -1255,7 +1255,7 @@ namespace sensors {
       * @param pin3 pin3 eg:DigitalPin.P14
       * @param pin4 pin4 eg:DigitalPin.P16
       */
-     //% blockId=four_sensor_tracking block="four_sensor_tracking pin1 |digitalpin %pin1 pin2 |digitalpin %pin2 |pin3 |digitalpin %pin3 |pin4 |digitalpin %pin4"  group="四路循迹传感器"
+     //% blockId=four_sensor_tracking block="four_sensor_tracking pin1 |digitalpin %pin1 pin2 |digitalpin %pin2 |pin3 |digitalpin %pin3 |pin4 |digitalpin %pin4"  group="FourWayTrackSensor"
      //% inlineInputMode=inline
      //% weight=73
      //% subcategory="Sensor"
@@ -1266,7 +1266,7 @@ namespace sensors {
        outPin4 = pin4;
      }
      
-     //% blockId=four_sensor_trackingValue block="four_sensor_tracking get sensor value"  group="四路循迹传感器"
+     //% blockId=four_sensor_trackingValue block="four_sensor_tracking get sensor value"  group="FourWayTrackSensor"
      //% inlineInputMode=inline
      //% weight=72
      //% subcategory="Sensor"
@@ -1335,21 +1335,21 @@ namespace sensors {
        }
    }
 
-    //% blockId=actuator_buzzer0 block="actuator_buzzer0 pin %pin|status %status"   group="有源蜂鸣器"
+    //% blockId=actuator_buzzer0 block="actuator_buzzer0 pin %pin|status %status"   group="ActiveBuzzer"
     //% weight=70
     //% subcategory="Executor"
     export function actuator_buzzer0(pin: DigitalPin, status: on_off): void {
         pins.digitalWritePin(pin, status)
     }
 
-    //% blockId=actuator_buzzer1 block="actuator_buzzer1 pin %pin|freq %freq"   group="无源蜂鸣器"
+    //% blockId=actuator_buzzer1 block="actuator_buzzer1 pin %pin|freq %freq"   group="PassiveBuzzer"
     //% weight=70
     //% subcategory="Executor"
     export function actuator_buzzer1(pin: AnalogPin, freq: number): void {
         pins.analogWritePin(pin, freq)
     }
 
-    //% blockId=actuator_relay block="actuator_relay pin %pin|status %status"   group="继电器"
+    //% blockId=actuator_relay block="actuator_relay pin %pin|status %status"   group="Relay"
     //% weight=70
     //% subcategory="Executor"
     export function actuator_relay(pin: DigitalPin, status: on_off): void {
@@ -1357,9 +1357,9 @@ namespace sensors {
     }
 
     /**
-     * 舵机
+     * Servo
      */
-    //% blockId=actuator_servo block="actuator_servo %pin|angle %angle"  group="舵机"
+    //% blockId=actuator_servo block="actuator_servo %pin|angle %angle"  group="Servo"
     //% angle.min=0  angle.max=180
     //% weight=70
     //% inlineInputMode=inline
@@ -1377,9 +1377,9 @@ namespace sensors {
     }
 
     /**
-     * 激光模块
+     * LaserModule
      */
-    //% blockId=actuator_laser block="actuator_laser pin %pin|status %status"   group="激光模块"
+    //% blockId=actuator_laser block="actuator_laser pin %pin|status %status"   group="LaserModule"
 	//% weight=70
 	//% subcategory="Executor"
     export function actuator_laser(pin: DigitalPin,status: on_off): void {
