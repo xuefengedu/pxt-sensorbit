@@ -1,3 +1,6 @@
+Fork from https://github.com/emakefun/pxt-sensorbit
+
+
 # Emakefun Micro:bit PH2.0 Sensor:bit Extensions
 ### [详细介绍请看官网](https://emakefun-docs.readthedocs.io/zh_CN/latest/)
 # Sensor:bit模块介绍
